@@ -8,10 +8,10 @@ int main()
     child_pid = fork();
     if (child_pid != 0)
     {
-        printf("0 this is the PARENT process, id > %d\n", (int)getpid());
-        printf("0 this is the PARENT process, id > %d\n", (int)getpid());
-        printf("0 child’s process ID is %d\n", (int)child_pid);
-        printf("0 child’s process ID is %d\n", (int)child_pid);
+        printf("this is the PARENT process, id > %d\n", (int)getpid());
+        printf("this is the PARENT process, id > %d\n", (int)getpid());
+        printf("child’s process ID is %d\n", (int)child_pid);
+        printf("child’s process ID is %d\n", (int)child_pid);
     }
     else
         printf("this is the child process, id > %d\n", (int)getpid());
